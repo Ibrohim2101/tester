@@ -1,5 +1,6 @@
 img{
-   height:300px;
+   height:auto;
+   max-height: 400px;
    width:100%;
  }
  
@@ -56,3 +57,8 @@ img{
  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
    transform: scale3d(1, 1, 1);
  }
+ .container {
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
+}
